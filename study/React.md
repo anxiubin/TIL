@@ -36,3 +36,8 @@ https://xiubindev.tistory.com/98
 useEffect()
 https://xiubindev.tistory.com/100
 
+useMemo()
+https://xiubindev.tistory.com/101
+
+useCallback()
+https://xiubindev.tistory.com/102
