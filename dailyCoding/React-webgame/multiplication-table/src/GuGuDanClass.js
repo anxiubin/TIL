@@ -1,6 +1,6 @@
 import React from 'react';
 
-class GuGuDan extends React.Component {
+class GuGuDanClass extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,9 +36,12 @@ class GuGuDan extends React.Component {
 
   input;
 
+  onRef = (e) => {this.input = e;};
+
   render() {
     return (
       <>
+      <h1>Class Component</h1>
       <div>
         {this.state.first} 곱하기 {this.state.second} 는?
       </div>
@@ -47,7 +50,7 @@ class GuGuDan extends React.Component {
         type="number" 
         value={this.state.value} 
         onChange={this.onChange}
-        ref={(e) => {this.input = e;}} />
+        ref={this.onRef} />
         <button type="submit">입력</button>
       </form>
       <div>{this.state.result}</div>
@@ -57,4 +60,4 @@ class GuGuDan extends React.Component {
 
 }
 
-export default GuGuDan;
+export default GuGuDanClass;

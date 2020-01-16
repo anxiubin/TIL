@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import GuGuDan from './GuGuDan';
+import GuGuDanClass from './GuGuDanClass';
+import GuGuDanFunction from './GuGuDanFunction';
 
-ReactDOM.render(<GuGuDan />, document.getElementById('root'));
+ReactDOM.render(<><GuGuDanClass /><GuGuDanFunction /></>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
