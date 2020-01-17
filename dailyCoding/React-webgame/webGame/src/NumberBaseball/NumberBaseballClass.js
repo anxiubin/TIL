@@ -23,9 +23,11 @@ class NumberBaseballClass extends Component {
         const {value, tries, answer} = this.state;
         e.preventDefault();
         if(value === answer.join('')){
-            this.setState({
-                result: '홈런!',
-                tries: [...tries, {try: value, result: '홈런!'}]
+            this.setState((prevState) => {
+                return {
+                    result: '홈런!',
+                    tries: [...prevState.tries, {try: value, result: '홈런!'}]
+                };
             })
         } else {
             const myAnswerArray = value.split('').map((num) => parseInt(num));
@@ -49,9 +51,11 @@ class NumberBaseballClass extends Component {
                         ball++;
                     }
                 }
-                this.setState({
-                    tries: [...tries, {try: value, result: `${strike} 스트라이크, ${ball} 볼입니다`}],
-                    value:'',
+                this.setState((prevState) => {
+                    return {
+                        tries: [...prevState.tries, {try: value, result: `${strike} 스트라이크, ${ball} 볼입니다`}],
+                        value:'',
+                    };
                 });
             }
         }
