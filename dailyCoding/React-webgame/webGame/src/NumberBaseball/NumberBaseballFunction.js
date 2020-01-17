@@ -64,7 +64,7 @@ function NumberBaseballFunction() {
 
   return (
     <>
-      <h3>Number Baseball Game</h3>
+      <h3>Number Baseball Game Functional Component</h3>
         <div>
             <button onClick={onClick}>New Game</button>
         </div>

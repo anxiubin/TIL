@@ -87,7 +87,7 @@ class NumberBaseballClass extends Component {
       const {result,value, tries} = this.state;
     return (
       <>
-        <h3>Number Baseball Game</h3>
+        <h3>Number Baseball Game Class Component</h3>
         <div>
             <button onClick={this.onClick}>New Game</button>
         </div>

@@ -41,7 +41,7 @@ class GuGuDanClass extends Component {
   render() {
     return (
       <>
-      <h3>Class Component</h3>
+      <h3>GuGuDan Class Component</h3>
       <div>
         {this.state.first} 곱하기 {this.state.second} 는?
       </div>
