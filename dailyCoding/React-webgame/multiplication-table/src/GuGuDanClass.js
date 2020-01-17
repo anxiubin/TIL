@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class GuGuDanClass extends React.Component {
+class GuGuDanClass extends Component {
   constructor(props) {
     super(props);
     this.state = {
