@@ -71,6 +71,7 @@ class NumberBaseballClass extends Component {
 
     onClick = () => {
         this.setState({
+            result: '',
             value: '',
             answer: getNumbers(),
             tries: []
@@ -83,7 +84,7 @@ class NumberBaseballClass extends Component {
     onRef = (e) => {this.input = e;};
 
   render() {
-      const {value, tries} = this.state;
+      const {result,value, tries} = this.state;
     return (
       <>
         <h3>Number Baseball Game</h3>
@@ -91,6 +92,7 @@ class NumberBaseballClass extends Component {
             <button onClick={this.onClick}>New Game</button>
         </div>
         <br/>
+        <h2>{result}</h2>
         <form onSubmit={this.onSubmit}>
             <input 
             maxLength={4} 

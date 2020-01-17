@@ -3,6 +3,7 @@ import {Route, Link} from 'react-router-dom';
 import GuGuDanClass from './GuGuDan/GuGuDanClass';
 import GuGuDanFunction from './GuGuDan/GuGuDanFunction';
 import NumberBaseballClass from './NumberBaseball/NumberBaseballClass';
+import NumberBaseballFunction from './NumberBaseball/NumberBaseballFunction';
 
 function App() {
   return (
@@ -12,12 +13,13 @@ function App() {
     <div><Link to="/GuGuDanFunction">구구단 Functional ver.</Link></div>
     <br/>
     <div><Link to="/NumberBaseballClass">숫자 야구 Class ver.</Link></div>
-
+    <div><Link to="/NumberBaseballFunction">숫자 야구 Functional ver.</Link></div>
     <br/>
     <hr/>
       <Route path="/GuGuDanClass" component={GuGuDanClass} />
       <Route path="/GuGuDanFunction" component={GuGuDanFunction} />
       <Route path="/NumberBaseballClass" component={NumberBaseballClass} />
+      <Route path="/NumberBaseballFunction" component={NumberBaseballFunction} />
     </>
   );
 }
