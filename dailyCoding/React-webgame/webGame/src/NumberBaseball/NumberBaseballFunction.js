@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, memo} from 'react';
 import TryFC from './TryFC';
 
 function getNumbers() {
@@ -89,5 +89,6 @@ function NumberBaseballFunction() {
         </ul>
     </>
   );
-}
-export default NumberBaseballFunction;
+};
+
+export default memo(NumberBaseballFunction);
