@@ -28,7 +28,7 @@ function GuGuDanFunction () {
 
     return (
       <>
-      <h1>Functional Component</h1>
+      <h3>Functional Component</h3>
       <div>
         {first} 곱하기 {second} 는?
       </div>
