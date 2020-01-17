@@ -1,4 +1,4 @@
-import React, {PureComponent} from 'react';
+import React, {PureComponent, createRef} from 'react';
 import Try from './Try';
 
 function getNumbers() {
@@ -59,7 +59,7 @@ class NumberBaseballClass extends PureComponent {
                 });
             }
         }
-        this.input.focus();
+        this.input.current.focus();
         console.log(answer);
     };
 
@@ -79,9 +79,7 @@ class NumberBaseballClass extends PureComponent {
     }
 
 
-    input;
-    
-    onRef = (e) => {this.input = e;};
+    input = createRef();
 
   render() {
       const {result,value, tries} = this.state;
@@ -99,7 +97,7 @@ class NumberBaseballClass extends PureComponent {
             value={value} 
             onChange={this.onChange} 
             placeholder={'4자리 숫자를 입력하세요'} 
-            ref={this.onRef} />    
+            ref={this.input} />    
         </form>
         <br/>
         <div>시도: {tries.length}</div>

@@ -48,6 +48,7 @@ function NumberBaseballFunction() {
                 setValue('');
             }
         }
+        input.current.focus();
     };
     const onChange = (e) => {
         setValue(e.target.value);
