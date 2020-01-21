@@ -6,6 +6,8 @@ import NumberBaseballClass from './NumberBaseball/NumberBaseballClass';
 import NumberBaseballFunction from './NumberBaseball/NumberBaseballFunction';
 import {ResponseCheckClass} from './ResponseCheck/ResponseCheckClass';
 import {ResponseCheckFunction} from './ResponseCheck/ResponseCheckFunction';
+import {RSPclass} from './RockScissorsPaper/RSPclass';
+import {RSPfunction} from './RockScissorsPaper/RSPfunction';
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
     <div><Link to="/ResponseCheckClass">반응 속도 체크 Class ver.</Link></div>
     <div><Link to="/ResponseCheckFunction">반응 속도 체크 Functional ver.</Link></div>
     <br/>
+    <div><Link to="/RSPclass">가위 바위 보 Class ver.</Link></div>
+    <div><Link to="/RSPfunction">가위 바위 보 Functional ver.</Link></div>
+    <br/>
     <hr/>
       <Route path="/GuGuDanClass" component={GuGuDanClass} />
       <Route path="/GuGuDanFunction" component={GuGuDanFunction} />
@@ -27,6 +32,8 @@ function App() {
       <Route path="/NumberBaseballFunction" component={NumberBaseballFunction} />
       <Route path="/ResponseCheckClass" component={ResponseCheckClass} />
       <Route path="/ResponseCheckFunction" component={ResponseCheckFunction} />
+      <Route path="/RSPclass" component={RSPclass} />
+      <Route path="/RSPfunction" component={RSPfunction} />
     </>
   );
 }
