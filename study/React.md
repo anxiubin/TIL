@@ -41,3 +41,19 @@ https://xiubindev.tistory.com/101
 
 useCallback()
 https://xiubindev.tistory.com/102
+
+useReducer()
+
+https://xiubindev.tistory.com/104
+
+useContext() & Context API 
+
+https://xiubindev.tistory.com/105
+
+### Performance Optimization
+
+https://xiubindev.tistory.com/103
+
+### Immer
+
+https://xiubindev.tistory.com/106
