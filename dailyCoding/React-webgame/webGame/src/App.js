@@ -8,6 +8,8 @@ import {ResponseCheckClass} from './ResponseCheck/ResponseCheckClass';
 import {ResponseCheckFunction} from './ResponseCheck/ResponseCheckFunction';
 import {RSPclass} from './RockScissorsPaper/RSPclass';
 import {RSPfunction} from './RockScissorsPaper/RSPfunction';
+import {LottoClass} from './Lotto/LottoClass';
+import {LottoFunction} from './Lotto/LottoFunction';
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
     <div><Link to="/RSPclass">가위 바위 보 Class ver.</Link></div>
     <div><Link to="/RSPfunction">가위 바위 보 Functional ver.</Link></div>
     <br/>
+    <div><Link to="/LottoClass">로또 추첨 Class ver.</Link></div>
+    <div><Link to="/LottoFunction">로또 추첨 Functional ver.</Link></div>
+    <br/>
     <hr/>
       <Route path="/GuGuDanClass" component={GuGuDanClass} />
       <Route path="/GuGuDanFunction" component={GuGuDanFunction} />
@@ -34,6 +39,8 @@ function App() {
       <Route path="/ResponseCheckFunction" component={ResponseCheckFunction} />
       <Route path="/RSPclass" component={RSPclass} />
       <Route path="/RSPfunction" component={RSPfunction} />
+      <Route path="/LottoClass" component={LottoClass} />
+      <Route path="/LottoFunction" component={LottoFunction} />
     </>
   );
 }
