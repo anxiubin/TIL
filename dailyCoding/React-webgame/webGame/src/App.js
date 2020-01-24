@@ -10,6 +10,7 @@ import {RSPclass} from './RockScissorsPaper/RSPclass';
 import {RSPfunction} from './RockScissorsPaper/RSPfunction';
 import {LottoClass} from './Lotto/LottoClass';
 import {LottoFunction} from './Lotto/LottoFunction';
+import {TicTacToeFunction} from './TicTacToe/TicTacToeFunction';
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
     <div><Link to="/LottoClass">로또 추첨 Class ver.</Link></div>
     <div><Link to="/LottoFunction">로또 추첨 Functional ver.</Link></div>
     <br/>
+    <div><Link to="/TicTacToeFunction">틱택토 Functional ver.</Link></div>
+    <br/>
     <hr/>
       <Route path="/GuGuDanClass" component={GuGuDanClass} />
       <Route path="/GuGuDanFunction" component={GuGuDanFunction} />
@@ -41,6 +44,7 @@ function App() {
       <Route path="/RSPfunction" component={RSPfunction} />
       <Route path="/LottoClass" component={LottoClass} />
       <Route path="/LottoFunction" component={LottoFunction} />
+      <Route path="/TicTacToeFunction" component={TicTacToeFunction} />
     </>
   );
 }
