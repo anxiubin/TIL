@@ -11,6 +11,7 @@ import {RSPfunction} from './RockScissorsPaper/RSPfunction';
 import {LottoClass} from './Lotto/LottoClass';
 import {LottoFunction} from './Lotto/LottoFunction';
 import {TicTacToeFunction} from './TicTacToe/TicTacToeFunction';
+import MineSearch from './MineSearch/MineSearch';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
     <br/>
     <div><Link to="/TicTacToeFunction">틱택토 Functional ver.</Link></div>
     <br/>
+    <br/>
+    <div><Link to="/MineSearch">지뢰찾기</Link></div>
+    <br/>
     <hr/>
       <Route path="/GuGuDanClass" component={GuGuDanClass} />
       <Route path="/GuGuDanFunction" component={GuGuDanFunction} />
@@ -45,6 +49,7 @@ function App() {
       <Route path="/LottoClass" component={LottoClass} />
       <Route path="/LottoFunction" component={LottoFunction} />
       <Route path="/TicTacToeFunction" component={TicTacToeFunction} />
+      <Route path="/MineSearch" component={MineSearch} />
     </>
   );
 }
