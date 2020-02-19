@@ -9,7 +9,11 @@ https://xiubindev.tistory.com/91
 
 https://xiubindev.tistory.com/92
 
-### Component
+### Class Component and this
+
+https://xiubindev.tistory.com/107
+
+### Functional Component
 
 https://xiubindev.tistory.com/93
 
@@ -47,11 +51,9 @@ useCallback()
 https://xiubindev.tistory.com/102
 
 useReducer()
-
 https://xiubindev.tistory.com/104
 
 useContext() & Context API 
-
 https://xiubindev.tistory.com/105
 
 ### Performance Optimization
@@ -61,3 +63,7 @@ https://xiubindev.tistory.com/103
 ### Immer
 
 https://xiubindev.tistory.com/106
+
+### PureComponent and shouldComponentUpdate
+
+https://xiubindev.tistory.com/109
