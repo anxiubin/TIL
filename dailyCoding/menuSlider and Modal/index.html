@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="user" />
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <h1>Landing Page</h1>
+
+        <p>
+            Make menu slider and modal
+        </p>
+
+        <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+
+    <div class="container">
+
+        <div class="home-img">
+            <img src="https://themefisher.com/wp-content/uploads/2019/04/Bootstrap-Portfolio.jpg" alt="home">
+        </div>
+
+        <h2>Build your own personalized website</h2>
+        <p>
+            A portfolio is a grouping of financial assets such as stocks, bonds, commodities, currencies
+            and cash equivalents, as well as their fund counterparts, including mutual, exchange-traded and closed
+            funds.
+            A portfolio can also consist of non-publicly tradable securities, like real estate, art, and private
+            investments.
+        </p>
+
+        <h2>How to create a work portfolio</h2>
+        <p>
+            1.Collect Examples of Your Work. <br>
+            2.Include Photos of Yourself Working. <br>
+            3.Include Info About Prestigious and Successful Companies You've Worked With. <br>
+            4.Include Any Correspondence You Have Received in the Past. <br>
+            5.Demonstrate Your Skills. <br>
+        </p>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register with us to get offers, support and more</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name" class="form-input" />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter Email" class="form-input" />
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password" class="form-input" />
+                    </div>
+                    <div>
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" placeholder="Confirm Password" class="form-input" />
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
