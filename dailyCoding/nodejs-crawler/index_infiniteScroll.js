@@ -19,7 +19,7 @@ const crawler = async () => {
       const srcs = await page.evaluate(() => {
         window.scrollTo(0, 0);
         let imgs = [];
-        const imgEls = document.querySelectorAll('.nDTlD'); 
+        const imgEls = document.querySelectorAll('.nDTlD');  //사이트마다 클래스 분석하는 것 중요
         if (imgEls.length) {
           imgEls.forEach((v) => {
             let img = v.querySelector('img._2zEKz'); 
@@ -32,11 +32,11 @@ const crawler = async () => {
         window.scrollBy(0, 100);
         setTimeout(() => {
           window.scrollBy(0, 200);
-        }, 500);
+        }, 500); //사이트마다 스크롤 조절하는 방법이 다르다
         return imgs;
       });
       result = result.concat(srcs);
-      await page.waitForSelector('.nDTlD');
+      await page.waitForSelector('.nDTlD'); //이미지 요소들 삭제 후 페이지에 다음 이미지 나올 때까지 기다리기
     }
     console.log(result);
     result.forEach(async (src) => {
