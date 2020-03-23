@@ -2,9 +2,9 @@
   "name": "nodejs-crawler",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index_infiniteScroll",
   "scripts": {
-    "start": "node index"
+    "start": "node index_infiniteScroll"
   },
   "author": "xiubin",
   "license": "ISC",
