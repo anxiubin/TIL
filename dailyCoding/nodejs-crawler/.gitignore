@@ -3,3 +3,5 @@ node_modules
 poster
 screenshot
 scrolledImg
+
+.env

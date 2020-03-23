@@ -2,9 +2,9 @@
   "name": "nodejs-crawler",
   "version": "1.0.0",
   "description": "",
-  "main": "index_infiniteScroll",
+  "main": "index_Facebook.js",
   "scripts": {
-    "start": "node index_infiniteScroll"
+    "start": "node index_Facebook"
   },
   "author": "xiubin",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "cheerio": "^1.0.0-rc.3",
     "csv-parse": "^4.8.8",
     "csv-stringify": "^5.3.6",
+    "dotenv": "^8.2.0",
     "puppeteer": "^2.1.1",
     "xlsx": "^0.15.5"
   }
