@@ -15,7 +15,7 @@ const crawler = async () => {
     const page = await browser.newPage();
     await page.goto('https://unsplash.com');
     let result = [];
-    while (result.length <= 30) {
+    while (result.length <= 20) {
       const srcs = await page.evaluate(() => {
         window.scrollTo(0, 0);
         let imgs = [];
@@ -43,7 +43,7 @@ const crawler = async () => {
         const imgResult = await axios.get(src.replace(/\?.*$/, ''), {
             responseType: 'arraybuffer',
         });
-        fs.writeFileSync(`imgs/${new Date().valueOf()}.jpeg`, imgResult.data);
+        fs.writeFileSync(`scrolledImg/${new Date().valueOf()}.jpeg`, imgResult.data);
     })
     await page.close();
     await browser.close();
