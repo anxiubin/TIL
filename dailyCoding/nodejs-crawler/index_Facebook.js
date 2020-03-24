@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer');
 const dotenv = require('dotenv');
 dotenv.config();
-const fs = require('fs');
 
 const crawler = async () => {
     try {
